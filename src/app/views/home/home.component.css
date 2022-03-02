@@ -1,0 +1,987 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Titillium+Web&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #332E2E;
+}
+
+hr{
+    color: #6A6868;
+}
+
+.secao-apresentação{
+    width: 100%;
+    background-image: url(../img/fundo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+
+.secao-apresentação a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    margin: auto;
+    font-size: 14px;                
+}
+
+.telefone-container{
+    position: relative;
+    left: 5%;
+    background: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.whats-container{
+    position: relative;
+    right: 12%;
+    background: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;     
+}
+
+.bem-vindo-container{
+    position: relative;
+    right: 16%; 
+    background: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.redes-container{
+    position: relative;
+    right: 5%;
+    align-items: center;
+}
+
+.face{
+    width: 30px;
+    position: relative;
+    left: 50%;    
+}
+
+.insta{
+    width: 32px;
+    position: relative;
+    left: 50%;
+}
+
+.twitter{
+    width: 35px;
+    position: relative;
+    left: 42%;
+}
+
+.secao-logo{
+    max-width: 100%;
+    background-image: url(../img/Rectangle\ 1.png);
+    background-position: center;
+    height: 137px;
+    background-repeat: none;
+    background-size: cover;
+    margin: auto;
+    display: flex;
+    align-items: center;    
+}
+
+.logo-G{
+    width: 120px;
+    position: relative;
+    left: 40%;
+    justify-content: center;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search {
+    position: relative;
+    top: 5%;
+    left: 7%;
+    background: whitesmoke;
+    height: 40px;
+    padding: 3px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.botão{
+    border: none;
+    position: relative;
+    left: -0,1%;
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+.barra-busca{
+    width: 400px;
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    color: #332E2E;
+    font-size: 20px;
+    line-height: 40px;
+    font-size: "Roboto";
+}
+
+.search-button{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    color: #332E2E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.atendimento{
+    width: 80%;
+    position: relative;
+    top: 5%;
+    left: 5%;
+    background: none;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: whitesmoke;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.atendimento img{
+    width: 50px;
+}
+
+.login{
+    width: 15%;
+    position: relative;
+    top: 5%;
+    background: none;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: whitesmoke;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.login img{
+    width: 50px;
+}
+
+.carrinho img{
+    width: 50px;
+    position: relative;
+    left: 75%;
+}
+
+.container-grid{
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header{
+    background-color: #6A6868; 
+    height: 45px;
+}
+
+.menu{
+    width: 1366px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Verdana, Arial, Helvetica, sans-serif, sans-serif;
+    font-size: 15px;
+}
+
+.barras{
+    width: 30px;
+    display: none;
+}
+
+.posicionamento-header{
+    position: relative;
+}
+
+.secao-banner{
+    width: 1200px;
+    position: relative;
+    background-color: #332E2E;
+    padding: 1px;
+    display: flex;
+    justify-content: space-around;
+    align-items:    
+}
+.carousel-inner{
+    max-width: 100%;
+    margin: 5px 0;
+}
+
+.loja{
+    width: 100px;
+    border-color: white;
+}
+
+.galeria{
+    max-width: 80%;
+    height: 190px;
+    border-color: #6A6868;
+    box-shadow: #6A6868;
+    position: relative;
+    display: flex;   
+}
+
+.box-galeria{
+    max-width: 100%; 
+        
+}
+
+.box-galeria:hover .single-box img{
+    transform: scale(1.1);
+}
+
+.single-box img{
+    max-width: 100%;
+    height: 190px;
+    margin right: 5%;
+    border-radius: 2px;
+    margin-bottom: 2px;
+    box-shadow: #6A6868;
+    transition: 0.5s;
+    display: 
+    align-items: center;
+    box-shadow: 0 0 15px #6A6868;
+    display: inline-block;
+}
+.secao-produtos{
+    padding: 20px;
+}
+
+.secao-produtos .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bloco-produtos{
+    width: 70%;
+    height: 90%;
+    color: black;
+}
+
+.bloco-produtos h2{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-around;
+}
+
+.bloco-produtos{
+    font-size: 15px;
+}
+
+.content-news{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.produtos{
+    width: 245px;
+    height: 370px;
+    background: whitesmoke;
+    color: black;
+    margin-bottom: 32px;
+    box-shadow: 0px 0px 10px;
+    border-radius: 5%;
+}
+
+.produtos img{
+    width: 180px;
+    margin-top: 5%;
+    margin-left: 10%;
+    display: inline;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.produtos h3{
+    font-family: Verdana, Arial, Helvetica, sans-serif, sans-serif;
+    font-size: 16px;
+    color: black;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    text-justify: justify;
+    align-items: center;
+}
+
+.produtos h2{
+    color: green;
+}
+
+.produtos p{
+    margin-top: 20%;
+    font-size: 16px;
+    color: black;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    text-justify: justify;
+    align-items: center;
+}
+
+.text-cadeira h3{
+    font-size: 15px; 
+}
+
+.preço-cadeira h2{
+    margin-top: 30px;
+    color: green;
+    font-family: Verdana, Arial, Helvetica, sans-serif, sans-serif;
+}
+
+.forma-cadeira p{
+    margin-top: 0px;
+    font-family: Verdana, Arial, Helvetica, sans-serif, sans-serif;
+}
+
+.cadeira{
+    width: 200px;
+    margin-top: 0px;
+    margin-left: 10%;
+    background-position: right;
+    background: #332E2E;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.text-pc h3{
+    font-size: 15px;
+    
+}
+
+.preço-pc h2{
+    margin-top: 12px;
+    color: green;
+    font-family: Verdana, Arial, Helvetica, sans-serif, sans-serif;
+}
+
+.forma-pc p{
+    margin-top: 0px;
+    font-family: Verdana, Arial, Helvetica, sans-serif, sans-serif;
+}
+
+.pc{
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 10%;
+    background-position: right;
+    background: #332E2E;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.text-fone h3{
+    font-size: 15px;  
+}
+
+.preço-fone h2{
+    margin-top: 30px;
+    color: green;
+    font-family: Verdana, Arial, Helvetica, sans-serif, sans-serif;
+}
+
+.forma-fone p{
+    margin-top: 0px;
+    font-family: Verdana, Arial, Helvetica, sans-serif, sans-serif;
+}
+
+.fone{
+    width: 200px;
+    margin-top: 15px;
+    margin-left: 10%;
+    background-position: right;
+    background: #332E2E;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.text-mouse h3{
+    font-size: 15px;  
+}
+
+.preço-mouse h2{
+    margin-top: 45px;
+    color: green;
+    font-family: Verdana, Arial, Helvetica, sans-serif, sans-serif;
+}
+
+.forma-mouse p{
+    margin-top: 0px;
+    font-family: Verdana, Arial, Helvetica, sans-serif, sans-serif;
+}
+.mouse{
+    width: 200px;
+    margin-top: 0px;
+    margin-left: 10%;
+    background-position: right;
+    background: #332E2E;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.text-teclado h3{
+    font-size: 15px;  
+}
+
+.preço-teclado h2{
+    margin-top: 60px;
+    color: green;
+    font-family: Verdana, Arial, Helvetica, sans-serif, sans-serif;
+}
+
+.forma-teclado p{
+    margin-top: 0px;
+    font-family: Verdana, Arial, Helvetica, sans-serif, sans-serif;
+}
+.teclado{
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 10%;
+    background-position: right;
+    background: #332E2E;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.text-placa h3{
+    font-size: 15px;  
+}
+
+.preço-placa h2{
+    margin-top: 55px;
+    color: green;
+    font-family: Verdana, Arial, Helvetica, sans-serif, sans-serif;
+}
+
+.forma-placa p{
+    margin-top: 0px;
+    font-family: Verdana, Arial, Helvetica, sans-serif, sans-serif;
+}
+.placa{
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 10%;
+    background-position: right;
+    background: #332E2E;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.secao-noticias{
+    background: #332E2E;
+    padding: 10px;
+}
+
+.secao-noticias .noticias{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bloco-noticias{
+    width: 70%;
+    height: 90%;
+    color: white;    
+}
+
+.bloco-noticias h2{
+    font-size: 25px;
+    font-family: Verdana, Arial, Helvetica, sans-serif, sans-serif;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.cardnews img{
+    border-radius: 5px;
+    border: #6A6868;
+}
+
+.cardnews h1{
+    font-family: Verdana, Arial, Helvetica, sans-serif, sans-serif;
+    font-size: 24px;
+
+}
+
+.cardnews p{
+    font-family: Verdana, Arial, Helvetica, sans-serif, sans-serif;
+    font-size: 15px;
+
+}
+
+.cardnews a{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-size: 20px;
+    font-family: Verdana, Arial, Helvetica, sans-serif, sans-serif;
+}
+
+
+footer .links{
+    width: 305px;
+    min-height: 150px;
+    padding: 5px;
+   
+}
+
+.rodape{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    color: white;    
+}
+
+.links{
+    color: white;
+    font-family: Verdana, Arial, Helvetica, sans-serif, sans-serif;
+    font-size: 16px;
+}
+
+.links a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    text-justify: justify;
+}
+
+.copyright{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.copy img{
+    width: 70px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copy p{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1200px) {
+    .secao-apresentação{
+        width: 100%;
+        max-width: 1024px;
+        font-size: 10px;    
+    }
+
+    .secao-apresentação img{
+        width: 25px;
+        max-width: 25%;
+    }
+
+    .telefone-container{
+        width: 60%;
+        max-width: 65%;
+        font-size: 2px;
+        position: relative;
+        left: 0%;
+    }
+
+    .whats-container{
+        width: 100%;
+        font-size: 9px;
+        position: relative;
+        right: 19%;
+    }
+
+    .bem-vindo-container{
+        width: 50%;
+        right: 25%;
+    }
+
+    .bem-vindo-container a{
+        width: 100%;
+        font-size: 12px;
+        position: relative;
+        left: 10%;
+    }   
+
+    .redes-container{
+        width: 25%;
+        max-width: 35%;
+    }
+
+    .redes-container img{
+        width: 20px;
+    }
+
+    .secao-logo{
+        width: 100%;
+        height: 5%;
+    }
+
+    .logo img{
+        width: 100px;
+    }
+
+    .search{
+        width: 500px;
+    }
+
+    .atendimento{        
+        width: 85%;
+    }
+
+    .atendimento img{
+        width: 50px;
+    }
+
+    .login{
+        width: 30%;
+    }
+
+    .login img{
+        width: 50px;
+    }
+    
+    .carrinho a{
+        width: 85%;
+        position: relative;
+    }
+
+    .carrinho img{
+        width: 40px;
+    }
+
+    .container-grid{
+        width: 100%;
+    }    
+
+    .menu{
+        width: 90%;
+    }
+    .menu a{
+        font-size: 14px;
+    }
+
+    .container-grid img{
+        position: relative;
+        left: 100%;
+    }
+
+    .banner{
+        width: 100%;
+    }
+
+    .carousel-indicators{
+        width: 70%;
+    }
+
+    .galeria{
+        width: 80%;
+        height: 25%;
+        margin-top: 2%;        
+    }
+
+    .secao-produtos{
+        width: 100%;
+    }
+
+    .bloco-produtos{
+        margin-top: 3%;
+    }
+
+    .cadeira{
+        position: relative;
+        top: -2%;
+    }
+
+    .pc{
+        position: relative;
+        top: -2%;          
+    }
+
+    .fone{
+        position: relative;
+        top: -2%;
+    }
+
+    .mouse{
+        position: relative;
+        top: -2%;
+    }
+
+    .teclado{
+        position: relative;
+        top: -2%;
+    }
+
+    .placa{
+        position: relative;
+        top: -2%;
+    }
+
+    .secao-noticias{
+        width: 100%;
+    }
+
+    .secao-noticias img{
+        width: 100%;
+    }
+
+    .cardnews h1{
+        font-size: 18px;
+    }
+
+    .cardnews p{
+        text-justify: justify;
+    }
+
+    .rodape{
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .links h2{
+        font-size: 18px;
+    }
+
+    .links{
+        width: 60%;
+        font-size: 12px;
+    }
+
+    .copyright{
+        width: 100%;
+        max-width: 80%;
+    }   
+}
+   
+@media screen and (max-width: 768px) { */
+    /* h1{
+        color:white;
+    }
+
+    .secao-apresentação{
+        display: none;
+}
+
+.secao-logo{
+    width: 100%;
+    height: 2%;
+}
+
+.logo img{
+    width: 80px;
+    position: relative;
+    left: 20%;
+}
+   
+.search-button{
+    width: 350px;
+}
+
+.botão{
+    width: 20px;
+    position: relative;
+    left: 2%;
+}
+
+.search-button img{
+    display: none;
+    position: relative;
+    right: 100%;
+}
+
+.atendimento{        
+    width: 100%;
+    font-size: 0px;
+    position: relative;
+    left: 10%;
+}
+
+.atendimento img{
+    width: 35px;
+}
+
+.login{
+    width: 100%;
+    font-size: 0px;
+    position: relative;
+    left: 5%;
+}
+
+.login img{
+    width: 35px;
+}
+
+.carrinho{
+    position: relative;
+    right: 5%;
+}
+
+.carrinho img{
+    width: 35px;
+}
+
+.container-grid{
+    width: 100%;
+}
+
+.barras{
+    display: inline-block;
+    position: relative;
+    left: 25%;
+}
+.sanduba{
+    display: none;
+}
+.menu{
+    display: none;
+    flex-direction: column;
+    width: 700px;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    left: 20%;
+    background-color: #6A6868;
+}
+.menu a{
+    text-align: center;
+    padding: 16px;
+}
+
+.posicionamento-header{
+    position: relative;
+}
+
+.menu-ativo{
+    display: flex;
+}
+
+.barra-busca{
+    display: none;
+    width: 0px;
+    background-color: #6A6868;
+}
+.container-grid{
+    width: 90%;
+}
+.menu{
+    width: 60%;
+}
+
+.galeria{
+    width: 100%;
+}
+
+.box-galeria{
+    width: 100%;
+    position: relative;
+    right: 5%;
+}
+
+.single-box{
+    width: 250px;
+    width: 205px;
+}
+
+.secao-produtos{
+    padding: 5px;
+}
+
+.secao-produtos .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bloco-produtos{
+    width: 50%;
+    height: 75%;
+    color: black;
+}
+
+.content-news{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 7%;
+}
+
+.cardnews img{
+    border-radius: 2px;
+    border: #6A6868;
+}
+
+.secao-produtos{
+    width: 100%;
+    height: 70%;
+}
+
+.container{
+    width: 100%;
+}
+
+.rodape{
+    width: 100%;
+} */
